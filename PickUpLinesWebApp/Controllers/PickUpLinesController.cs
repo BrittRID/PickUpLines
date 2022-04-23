@@ -60,7 +60,7 @@ namespace PickUpLinesWebApp.Controllers
         }
 
         // GET: PickUpLines/Create
-        [Authorize]
+      //  [Authorize]
         public IActionResult Create()
         {
             return View();
@@ -71,6 +71,7 @@ namespace PickUpLinesWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      //  [Authorize]
         public async Task<IActionResult> Create([Bind("Id,PickQuestion,PickAnswer")] PickUpLine pickUpLine)
         {
             if (ModelState.IsValid)
@@ -83,6 +84,7 @@ namespace PickUpLinesWebApp.Controllers
         }
 
         // GET: PickUpLines/Edit/5
+      //  [Authorize]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -103,6 +105,7 @@ namespace PickUpLinesWebApp.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        //[Authorize]
         public async Task<IActionResult> Edit(int id, [Bind("Id,PickQuestion,PickAnswer")] PickUpLine pickUpLine)
         {
             if (id != pickUpLine.Id)
@@ -134,6 +137,7 @@ namespace PickUpLinesWebApp.Controllers
         }
 
         // GET: PickUpLines/Delete/5
+        //[Authorize]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -152,6 +156,7 @@ namespace PickUpLinesWebApp.Controllers
         }
 
         // POST: PickUpLines/Delete/5
+       // [Authorize]
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
