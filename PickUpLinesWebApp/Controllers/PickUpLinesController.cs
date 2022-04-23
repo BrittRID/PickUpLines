@@ -25,6 +25,12 @@ namespace PickUpLinesWebApp.Controllers
             return View(await _context.PickUpLine.ToListAsync());
         }
 
+        // GET: PickUpLines/Search for pick up lines
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
         // GET: PickUpLines/Details/5
         public async Task<IActionResult> Details(int? id)
         {
