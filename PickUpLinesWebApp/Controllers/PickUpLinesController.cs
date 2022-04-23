@@ -31,6 +31,15 @@ namespace PickUpLinesWebApp.Controllers
             return View();
         }
 
+
+        // Post: PickUpLines/Show Search Results
+        public async Task<IActionResult> ShowSearchResults(string SearchPhrase)
+        {
+            return View("Index", await _context.PickUpLine.Where( j => j.PickQuestion.Contains(SearchPhrase)).ToListAsync());
+        }
+
+
+
         // GET: PickUpLines/Details/5
         public async Task<IActionResult> Details(int? id)
         {

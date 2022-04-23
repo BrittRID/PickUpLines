@@ -162,3 +162,4 @@ C:\Users\britt\Desktop\Repos\PickUpLinesWebApp\PickUpLinesWebApp\obj\Debug\net5.
 C:\Users\britt\Desktop\Repos\PickUpLinesWebApp\PickUpLinesWebApp\obj\Debug\net5.0\Razor\Views\PickUpLines\Details.cshtml.g.cs
 C:\Users\britt\Desktop\Repos\PickUpLinesWebApp\PickUpLinesWebApp\obj\Debug\net5.0\Razor\Views\PickUpLines\Edit.cshtml.g.cs
 C:\Users\britt\Desktop\Repos\PickUpLinesWebApp\PickUpLinesWebApp\obj\Debug\net5.0\Razor\Views\PickUpLines\Index.cshtml.g.cs
+C:\Users\britt\Desktop\Repos\PickUpLinesWebApp\PickUpLinesWebApp\obj\Debug\net5.0\Razor\Views\PickUpLines\ShowSearchForm.cshtml.g.cs
